@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposal</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        .container {
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        #no-btn {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Will you be mine forever?</h1>
+        <button id="yes-btn">Yes</button>
+        <button id="no-btn">No</button>
+        <button id="other-btn">other</button>
+        <div id="message"></div>
+    </div>
+
+    <script>
+        // Function for Yes button
+        document.getElementById("yes-btn").addEventListener("click", function() {
+            document.getElementById("message").innerHTML = "<h2>I love you too!</h2>";
+            document.getElementById("yes-btn").style.display = "none";
+            document.getElementById("no-btn").style.display = "none";
+            document.getElementById("other-btn").style.display = "none";
+        });
+
+        // Function for No button to move away
+        document.getElementById("no-btn").addEventListener("mouseover", function() {
+            var noBtn = document.getElementById("no-btn");
+            var randomX = Math.random() * 200 - 100;  // Move between -100px to 100px
+            var randomY = Math.random() * 200 - 100;  // Move between -100px to 100px
+            noBtn.style.transform = `translate(${randomX}px, ${randomY}px)`;
+        });
+                 // Function for oth button
+                 document.getElementById("other-btn").addEventListener("click", function() {
+            document.getElementById("message").innerHTML = "<h2>please please please🥺</h2>";
+            document.getElementById("other-btn").style.display = "none";
+
+        });
+    </script>
+   <style>
+    /* Center the content and give it a romantic feel */
+body {
+    background-color: #ffe6e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+}
+
+/* Style for the container */
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ff9999;
+}
+
+/* Heading styling */
+h1 {
+    color: #ff4d4d;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+button {
+    padding: 12px 24px;
+    font-size: 18px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Yes button style */
+#yes-btn {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+#yes-btn:hover {
+    background-color: #ff1a1a;
+    transform: scale(1.1);
+}
+
+/* No button style */
+#no-btn {
+    background-color: #999999;
+    color: white;
+}
+
+#no-btn:hover {
+    background-color: #808080;
+}
+
+#other-btn {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+#other-btn:hover {
+    background-color: #ff1a1a;
+    transform: scale(1.1);
+}
+/* Style for the message displayed after clicking Yes */
+#message h2 {
+    color: #ff3333;
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+/* Adding a soft animation to the No button's movement */
+#no-btn {
+    position: relative;
+    transition: transform 0.4s ease;
+}
+
+/* Box shadow for buttons */
+button {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Adding a heart background */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ff4d4d;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+/* Styling for the container border */
+.container {
+    border: 3px solid #ff6666;
+}
+
+   </style>
+</body>
+</html>
