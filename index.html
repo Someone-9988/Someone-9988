@@ -43,6 +43,14 @@ footer p {
 }
 
     </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-50T88PRCCX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-50T88PRCCX');
+    </script>
 </head>
 <body>
 
@@ -56,12 +64,25 @@ footer p {
     </div>
 
     <script>
+         // Check if the user already clicked "Yes"
+        if (localStorage.getItem("clickedYes") === "true") {
+            document.getElementById("message").innerHTML = "<h2>I love you too!</h2>";
+            document.getElementById("yes-btn").style.display = "none";
+            document.getElementById("no-btn").style.display = "none";
+        }
+
         // Function for Yes button
         document.getElementById("yes-btn").addEventListener("click", function() {
             document.getElementById("message").innerHTML = "<h2>I love you too!</h2>";
             document.getElementById("yes-btn").style.display = "none";
             document.getElementById("no-btn").style.display = "none";
             document.getElementById("other-btn").style.display = "none";
+            // Google Analytics Event Tracking
+            gtag('event', 'click', {
+                'event_category': 'Button',
+                'event_label': 'Yes Button',
+                'value': 1
+            });
         });
 
         // Function for No button to move away
@@ -70,11 +91,26 @@ footer p {
             var randomX = Math.random() * 200 - 1000;  // Move between -100px to 100px
             var randomY = Math.random() * 200 - 1000;  // Move between -100px to 100px
             noBtn.style.transform = `translate(${randomX}px, ${randomY}px)`;
+
+             // Google Analytics Event Tracking
+            gtag('event', 'hover', {
+                'event_category': 'Button',
+                'event_label': 'No Button',
+                'value': 1
+            });
+
+            localStorage.setItem("clickedNo", "true");  // Log that "No" was hovered
         });
                  // Function for oth button
                  document.getElementById("other-btn").addEventListener("click", function() {
             document.getElementById("message").innerHTML = "<h2>please please please🥺</h2>";
             document.getElementById("other-btn").style.display = "none";
+                        // Google Analytics Event Tracking for Other Button
+            gtag('event', 'click', {
+                'event_category': 'Button',
+                'event_label': 'Other Button',
+                'value': 1
+            });
 
         });
     </script>
