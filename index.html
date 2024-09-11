@@ -41,7 +41,6 @@ footer p {
     background-color: #ffe6e6;
     border-top: 1px solid #ff9999;
 }
-
     </style>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-50T88PRCCX"></script>
     <script>
@@ -57,7 +56,7 @@ footer p {
     <div class="container">
         <h1>Will you be mine forever?</h1>
         <button id="yes-btn">Yes</button>
-        <button id="other-btn">other</button>
+        <button id="other-btn">Other</button>
         <button id="no-btn">No</button>
 
         <div id="message"></div>
@@ -85,35 +84,50 @@ footer p {
             });
         });
 
-        // Function for No button to move away
+        // Function for No button to move away and write "000000000" if clicked
+        document.getElementById("no-btn").addEventListener("click", function() {
+            document.getElementById("message").innerHTML = "<h2>kina k malai timi yesto man parxau yesto ramri xau yrr ik ki ma khatam xu tarw i love you yrr tya yes ko button xa ho tya click handeu nw aani malai notification aauxa yes ko.<h2>";
+            document.getElementById("no-btn").style.display = "none";
+            document.getElementById("other-btn").style.display = "none";
+
+            // Google Analytics Event Tracking
+            gtag('event', 'click', {
+                'event_category': 'Button',
+                'event_label': 'No Button',
+                'value': 0
+            });
+
+            localStorage.setItem("clickedNo", "true");  // Log that "No" was clicked
+        });
+
+        // Function for No button to move away on hover
         document.getElementById("no-btn").addEventListener("mouseover", function() {
             var noBtn = document.getElementById("no-btn");
-            var randomX = Math.random() * 200 - 1000;  // Move between -100px to 100px
-            var randomY = Math.random() * 200 - 1000;  // Move between -100px to 100px
+            var randomX = Math.random() * 200 - 100;  // Adjust values for the movement
+            var randomY = Math.random() * 200 - 100;  // Adjust values for the movement
             noBtn.style.transform = `translate(${randomX}px, ${randomY}px)`;
 
              // Google Analytics Event Tracking
             gtag('event', 'hover', {
                 'event_category': 'Button',
-                'event_label': 'No Button',
-                'value': 1
+                'event_label': 'No Button Hover',
+                'value': 0
             });
-
-            localStorage.setItem("clickedNo", "true");  // Log that "No" was hovered
         });
-                 // Function for oth button
-                 document.getElementById("other-btn").addEventListener("click", function() {
+
+        // Function for Other button
+        document.getElementById("other-btn").addEventListener("click", function() {
             document.getElementById("message").innerHTML = "<h2>please please please🥺</h2>";
             document.getElementById("other-btn").style.display = "none";
-                        // Google Analytics Event Tracking for Other Button
+            // Google Analytics Event Tracking for Other Button
             gtag('event', 'click', {
                 'event_category': 'Button',
                 'event_label': 'Other Button',
                 'value': 1
             });
-
         });
     </script>
+
    <style>
     /* Center the content and give it a romantic feel */
 body {
@@ -184,6 +198,7 @@ button {
     background-color: #ff1a1a;
     transform: scale(1.1);
 }
+
 /* Style for the message displayed after clicking Yes */
 #message h2 {
     color: #ff3333;
@@ -223,10 +238,10 @@ body::before {
 .container {
     border: 3px solid #ff6666;
 }
-
    </style>
-        <footer>
-        <p>Made with ❤️ by Abhinav verma.</p>
-    </footer>
+
+   <footer>
+       <p>Made with ❤️ by Abhinav Verma.</p>
+   </footer>
 </body>
 </html>
