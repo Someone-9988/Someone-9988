@@ -1,16 +1,32 @@
-## Hi there 👋
+# Hi, I'm Abhinav 👋
 
-<!--
-**Someone-9988/Someone-9988** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I'm a learner transitioning from **Civil Engineering** to **Software Engineering**.
+I value structure, clarity, and long-term growth. What started as a logical career shift slowly became a deeper personal journey toward building things that actually matter.
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🚧 What I'm currently working on
+
+* Learning **programming fundamentals** (logic, problem-solving, clean code)
+* Building **small practice projects** to understand how real systems work
+* Exploring software engineering step by step, without rushing
+
+---
+
+## 🛠 Tools & Technologies
+
+* Languages: **HTML, CSS**
+* Tools: **Git, GitHub, VS Code**
+* Currently focused on: **web fundamentals, clean structure, and consistency**
+
+---
+
+## 📫 How to reach me
+
+* GitHub: You’re already here 🙂
+* Instagram: linked in my GitHub bio
+* Open to learning, collaboration, and meaningful conversations
+
+---
+
+> Building systems with patience. Learning with purpose.
