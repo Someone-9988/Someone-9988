@@ -1,10 +1,5 @@
 # Hi, I'm Abhinav 👋
 
-I'm a learner transitioning from **Civil Engineering** to **Software Engineering**.
-I value structure, clarity, and long-term growth. What started as a logical career shift slowly became a deeper personal journey toward building things that actually matter.
-
----
-
 ## 🚧 What I'm currently working on
 
 * Learning **programming fundamentals** (logic, problem-solving, clean code)
@@ -15,7 +10,7 @@ I value structure, clarity, and long-term growth. What started as a logical care
 
 ## 🛠 Tools & Technologies
 
-* Languages: **HTML, CSS**
+* Languages: **HTML, CSS AND JS**  
 * Tools: **Git, GitHub, VS Code**
 * Currently focused on: **web fundamentals, clean structure, and consistency**
 
