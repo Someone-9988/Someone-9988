@@ -21,6 +21,7 @@
 * GitHub: You’re already here 🙂
 * Instagram: linked in my GitHub bio
 * Open to learning, collaboration, and meaningful conversations
+* Email : contact@abhinavverma.com.np
 
 ---
 
