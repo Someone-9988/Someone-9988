@@ -1,5 +1,5 @@
 # 💫 About Me:
-What I'm currently working on<br>Learning programming fundamentals (logic, problem-solving, clean code)<br>Building small practice projects to understand how real systems work<br>Exploring software engineering step by step, without rushing<br>Tools & Technologies<br>Tools: Git, GitHub, VS Code<br>Currently focused on: web fundamentals, clean structure, and consistency<br>How to reach me<br>GitHub: You’re already here 🙂<br>Instagram: linked in my GitHub bio<br>Open to learning, collaboration, and meaningful conversations<br>Email : contact@abhinavverma.info.np<br>Website : abhinavverma.com.np
+What I'm currently working on<br>Learning programming fundamentals (logic, problem-solving, clean code)<br>Building small practice projects to understand how real systems work<br>Exploring software engineering step by step, without rushing<br>Tools & Technologies<br>Tools: Git, GitHub, VS Code<br>Currently focused on: web fundamentals, clean structure, and consistency<br>How to reach me<br>GitHub: You’re already here 🙂<br>Instagram: linked in my GitHub bio<br>Open to learning, collaboration, and meaningful conversations<br>Email : contact@abhinavverma.info.np<br>Website : https://www.abhinavverma.com.np/
 
 
 ## 🌐 Socials:
